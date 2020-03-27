@@ -31,9 +31,6 @@ namespace musicDBManagementSystem.project {
         private BasicButton removeArtistButton;
         private BasicButton updateArtistButton;
 
-        
-        // todo on selection of datagridview row, select only some specific artists
-        
         public Graphic(Controller ctrl, string title) {
             this.controller = ctrl;
             this.initializeMain(title);

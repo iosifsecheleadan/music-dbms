@@ -36,7 +36,7 @@ namespace musicDBManagementSystem.project.repository {
             if (where != null) {
                 commandText += $" where {where}";
             }
-            Console.WriteLine($"\n\t\tSCRIPT:\n{commandText}");
+            //Console.WriteLine($"\n\t\tSCRIPT:\n{commandText}");
             DataSet dataSet = new DataSet(tableName);
             SqlDataAdapter adapter = new SqlDataAdapter(commandText, this.connection);
             adapter.Fill(dataSet, tableName);
